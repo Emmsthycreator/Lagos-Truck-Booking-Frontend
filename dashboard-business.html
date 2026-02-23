@@ -1,1 +1,45 @@
-<!-- dashboard-business.html content here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Business User Dashboard</h1>
+    </header>
+    <main>
+        <section class="stats">
+            <h2>Statistics</h2>
+            <div class="stat">
+                <p>Total Bookings: <span id="total-bookings">250</span></p>
+            </div>
+            <div class="stat">
+                <p>Revenue: <span id="revenue">$15000</span></p>
+            </div>
+            <div class="stat">
+                <p>Active Users: <span id="active-users">120</span></p>
+            </div>
+        </section>
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <button onclick="window.location.href='new-booking.html'">Add New Booking</button>
+            <button onclick="window.location.href='manage-bookings.html'">Manage Bookings</button>
+            <button onclick="window.location.href='generate-report.html'">Generate Report</button>
+        </section>
+        <section class="recent-bookings">
+            <h2>Recent Bookings</h2>
+            <ul id="recent-bookings-list">
+                <li>Booking ID: 101 - Customer: John Doe - Date: 2026-02-20</li>
+                <li>Booking ID: 102 - Customer: Jane Smith - Date: 2026-02-21</li>
+                <li>Booking ID: 103 - Customer: Emily Johnson - Date: 2026-02-22</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Lagos Truck Booking</p>
+    </footer>
+</body>
+</html>
